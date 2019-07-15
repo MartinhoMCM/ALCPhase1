@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">ALC 4 Phase 1</string>
+
+    <string name="welcome">Welcome to ALC 4.0</string>
+    <string name="about">ABOUT ALC</string>
+    <string name="my_profile">MY PROFILE</string>
+    <string name="andela">Andela</string>
+    <string name="desc">A community empowering the next generation of African technology leaders</string>
+    <string name="long_desc">The Andela Learning Community is a network of people technologists and tech enthusiasts across Africa dedicated to learning how to use to solve humanity\'s problems</string>
+    <string name="email">martinhocorreiamussamba@gmail.com</string>
+    <string name="country_name">Angola</string>
+    <string name="country">Country:</string>
+    <string name="number_phone">+244 946 691 711</string>
+    <string name="phone">Phone Number:</string>
+    <string name="title">The Andela Learning Community</string>
+    <string name="joinUs">Join us!</string>
+    <string name="trackname">Android</string>
+    <string name="track">Track:</string>
+</resources>

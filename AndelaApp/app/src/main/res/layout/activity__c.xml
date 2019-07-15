@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityC"
+    android:background="@color/background">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/andela"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/myName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:text="Martinho MussAmba"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <View
+        android:id="@+id/lines"
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:background="@android:color/black"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myName"
+        android:layout_marginTop="4dp"></View>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/lines">
+        
+        <TextView
+            android:id="@+id/track"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/track"
+            android:textColor="@android:color/black"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:maxLines="1"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/track_android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/trackname"
+            android:layout_toRightOf="@+id/track"
+            android:textColor="@android:color/black"
+            android:maxLines="1"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/country"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/country"
+            android:textColor="@android:color/black"
+            android:layout_below="@+id/track"
+            android:layout_alignParentStart="true"
+            android:textSize="18sp"
+            android:maxLines="1"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/country_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/country_name"
+            android:layout_toRightOf="@+id/country"
+            android:layout_below="@+id/track_android"
+            android:textColor="@android:color/black"
+            android:maxLines="1"
+            android:textSize="18sp"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/country"
+            android:textColor="@android:color/black"
+            android:layout_below="@+id/country"
+            android:layout_alignParentStart="true"
+            android:maxLines="1"
+            android:textSize="18sp"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/email"
+            android:layout_toRightOf="@+id/email"
+            android:layout_below="@+id/country_desc"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:maxLines="1"
+            android:layout_marginTop="8dp"/>
+
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/phone"
+            android:textColor="@android:color/black"
+            android:layout_below="@+id/email"
+            android:layout_alignParentStart="true"
+            android:textSize="18sp"
+            android:maxLines="1"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/number_phone"
+            android:layout_toRightOf="@+id/phone"
+            android:layout_below="@+id/email"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/slackname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Slack Username: "
+            android:textColor="@android:color/black"
+            android:layout_below="@+id/phone"
+            android:layout_alignParentStart="true"
+            android:textSize="18sp"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MartinhoDev"
+            android:layout_toRightOf="@+id/slackname"
+            android:layout_below="@+id/phone"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:layout_marginTop="8dp"/>
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
